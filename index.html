@@ -62,11 +62,13 @@
   </head>
   <body>
     <div class="error">
+      <h1>看看这里啊，看看这啊</h1>
       <div class="left">
         <div class="title" id="s1">页面加载失败</div>
         <span id="s2">别紧张,立即刷新页面</span>
         <a id="s3">点击刷新</a>
       </div>
+      
       
     </div>
     <script>
@@ -77,16 +79,6 @@
           "Please check your network connection and refresh the page";
         document.querySelector("#s3").innerHTML = "Click Refresh";
       }
-      window.document.addEventListener(
-        "click",
-        function(e) {
-          var t = e.target;
-          if (t.nodeName == "A") {
-            window.location.href = "/";
-          }
-        },
-        false
-      );
     </script>
   </body>
 </html>
